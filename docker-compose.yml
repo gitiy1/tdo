@@ -5,12 +5,5 @@ services:
     image: iyserver/caddyt:latest
     ports:
       - "80:80"
-    privileged: true  
-    cap_add:
-      - ALL
     volumes:
       - "/data"
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
-    dns:
-      - 8.8.8.8
-      - 114.114.114.114
