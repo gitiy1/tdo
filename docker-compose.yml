@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  webapp:
+    image: iyserver/caddyt
+    ports:
+      - "80:80"
+    privileged: true  
+    cap_add:
+      - ALL
+    volumes:
+      - "/data"
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+    dns:
+      - 8.8.8.8
+      - 114.114.114.114
