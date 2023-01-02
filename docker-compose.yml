@@ -2,7 +2,7 @@ version: "3"
 
 services:
   webapp:
-    image: iyserver/caddyt
+    image: iyserver/caddyt:latest
     ports:
       - "80:80"
     privileged: true  
